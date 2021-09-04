@@ -1,3 +1,6 @@
 interface Car {
-  // fix me!
+    brand: string
+    model: string
+    doors: number
+    leftHanded: boolean
 }
