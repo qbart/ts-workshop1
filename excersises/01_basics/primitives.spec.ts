@@ -12,29 +12,29 @@ import { join, multiplyAll, sayHello } from "./primitives";
 describe("primitives", () => {
   describe("#add", () => {
     it("should add values", () => {
-      const result = add();
-      // expect(result).toEqual();
+      const result = add(2, 3);
+      expect(result).toEqual(5);
     });
   });
 
   describe("#concat", () => {
     test("should concatenate values", () => {
-      const result = concat();
-      // expect(result).toEqual()
+      const result = concat("abc", 123);
+      expect(result).toEqual("abc 123")
     });
   });
 
   describe("#sum", () => {
     test("should reduce values", () => {
-      const result = sum();
-      // expect(result).toEqual()
+      const result = sum([1,2,3,4]);
+      expect(result).toEqual(10)
     });
   });
 
   describe("#negate", () => {
     test("should negate value", () => {
-      const result = negate();
-      // expect(result).toEqual()
+      const result = negate(true);
+      expect(result).toEqual(false)
     });
   });
 
